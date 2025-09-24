@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terceiro Site</title>
+</head>
+<body>
+    <h1>Formularios HTML</h1>
+    <form action="https://formsubmit.co/cristian.tcastro@senacsp.edu.br" method="POST">
+        <!--Legenda para o input-->
+        <label for="nome">Nome: </label>
+        <!--Campo input do type Text-->
+        <input type="text" id="nome" placeholder="Nome" name="Nome" required>
+        <br><br>
+        <label for="text">Email: </label>
+        <input type="email" id="email" placeholder="Email ou Usuário" name="Email" required>
+        <br><br>
+        <label for="password">Senha: </label>
+        <input type="password" id="password" placeholder="Senha" name="Senha" required>
+        <br><br>
+        <h2>Animal de estimação</h2>
+        <input type="radio" id="cachorro" name="animal" value="cachorro">
+        <label for="cachorro">Cachorro</label>
+        <br>
+        <input type="radio" id="gato" name="animal" value="gato">
+        <label for="gato">Gato</label>
+        <br>
+        <input type="radio" name="animal" id="coruja" value="coruja">
+        <label for="coruja">Coruja</label>
+        <h2>Lista de Compras</h2>
+        <input type="checkbox" id="arroz" value="arroz" name="compras">
+        <label for="arroz">Arroz</label>
+        <br>
+        <input type="checkbox" id="feijao" value="feijao" name="compras">
+        <label for="feijao">Feijao</label>
+        <br>
+        <input type="checkbox" id="salada" value="salada" name="compras">
+        <label for="salada">Salada</label>
+        <h2>Cores</h2>
+        <select name="cores">
+            <option selected disabled value="">Selecione uma cor</option>
+            <option value="azul">Azul</option>
+            <option value="roxo">Roxo</option>
+            <option value="vermelho">Vermelho</option>
+            <option value="preto">Preto</option>
+        </select>
+        <h2>Mensagem</h2>
+        <textarea style="resize: none;" rows="5" cols="20">
+
+        </textarea>
+
+        <br><br>
+        <input type="submit" velue="Enviar!">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+    </form>
+</body>
+</html>
